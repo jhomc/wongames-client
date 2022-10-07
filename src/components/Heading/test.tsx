@@ -5,7 +5,7 @@ import Heading from '.'
 
 describe('<Heading />', () => {
   it('should render a white heading by default', () => {
-    renderWithTheme(<Heading>Wongames</Heading>)
+    renderWithTheme(<Heading>Won games</Heading>)
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
       color: '#FAFAFA'
     })
