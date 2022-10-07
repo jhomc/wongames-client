@@ -19,7 +19,7 @@ const wrapperModifiers = {
       content: '';
 
       width: 5rem;
-      border: 0.5rem solid ${theme.colors.primary};
+      border-bottom: 0.5rem solid ${theme.colors.primary};
     }
   `
 }
