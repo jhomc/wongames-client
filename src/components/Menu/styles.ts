@@ -33,7 +33,7 @@ export const MenuGroup = styled.div`
     justify-content: flex-end;
 
     > div {
-      margin-left: ${theme.spacings.small};
+      margin-left: ${theme.spacings.xsmall};
     }
   `}
 `
