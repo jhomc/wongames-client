@@ -31,13 +31,18 @@ export const MenuGroup = styled.div`
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+    align-items: center;
 
     > div {
       margin-left: ${theme.spacings.xsmall};
     }
   `}
 `
-export const MenuNav = styled.div``
+export const MenuNav = styled.div`
+  ${({ theme }) => css`
+    margin-left: ${theme.spacings.small};
+  `}
+`
 
 export const MenuLink = styled.a`
   ${({ theme }) => css`
@@ -46,6 +51,7 @@ export const MenuLink = styled.a`
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-align: center;
+    color: ${theme.colors.white};
 
     &:hover {
       &::after {
@@ -87,6 +93,7 @@ export const MenuFull = styled.nav<MenuFullProps>`
     right: 0;
     height: 100vh;
     overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
     opacity: ${isOpen ? 1 : 0};
     pointer-events: ${isOpen ? 'all' : 'none'};
 
@@ -112,6 +119,13 @@ export const MenuFull = styled.nav<MenuFullProps>`
       font-weight: ${theme.font.bold};
       font-size: ${theme.font.sizes.xlarge};
       margin-bottom: ${theme.spacings.small};
+      transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
+      transition: transform 0.3s ease-in-out;
+    }
+
+    ${RegisterBox} {
+      transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
+      transition: transform 0.3s ease-in-out;
     }
   `}
 `
