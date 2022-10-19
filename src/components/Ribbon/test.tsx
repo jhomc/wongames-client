@@ -25,4 +25,13 @@ describe('<Ribbon />', () => {
       backgroundColor: '#3CD3C1'
     })
   })
+
+  it('should render with the normal size as default', () => {
+    renderWithTheme(<Ribbon color="secondary">Best Seller</Ribbon>)
+
+    expect(screen.getByText(/Best seller/i)).toHaveStyle({
+      height: '3.6rem',
+      fontSize: '1.4rem'
+    })
+  })
 })
