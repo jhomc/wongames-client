@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> should render the medium size by default 1`] = `
+exports[`<Banner /> should render correctly 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -32,11 +32,42 @@ exports[`<Button /> should render the medium size by default 1`] = `
   background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
 }
 
-<button
-  class="c0"
+<main
+  class=""
 >
-  <span>
-    Buy now
-  </span>
-</button>
+  <div
+    aria-label="Defy death"
+    class=""
+    role="img"
+    src="https://source.unsplash.com/user/willianjusten/1042x580"
+  />
+  <div
+    class=""
+  >
+    <h2
+      class=""
+    >
+      Defy death
+    </h2>
+    <h3
+      class=""
+    >
+      <p>
+        Play the new 
+        <strong>
+          CrashLands
+        </strong>
+         season
+      </p>
+    </h3>
+    <a
+      class="c0"
+      href="/games/defy-death"
+    >
+      <span>
+        Buy now
+      </span>
+    </a>
+  </div>
+</main>
 `
