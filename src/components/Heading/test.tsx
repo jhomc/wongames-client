@@ -49,7 +49,7 @@ describe('<Heading />', () => {
     renderWithTheme(<Heading lineBottom>Won games</Heading>)
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
       'width',
-      '3rem',
+      '5rem',
       {
         modifier: '::after'
       }
