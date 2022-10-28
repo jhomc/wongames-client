@@ -23,6 +23,7 @@ const GameCard = ({ title, developer, img, price }: GameCardProps) => (
     <S.BuyBox>
       <S.Price>{price}</S.Price>
     </S.BuyBox>
+    <div>teste</div>
   </S.Wrapper>
 )
 
